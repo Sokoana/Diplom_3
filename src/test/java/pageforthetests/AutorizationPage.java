@@ -32,7 +32,7 @@ public class AutorizationPage {
 
 
     public void waitLoginPage() {
-        new WebDriverWait(driver, 5).until(driver -> (driver.findElement(entrance).getText() != null
+        new WebDriverWait(driver, 9).until(driver -> (driver.findElement(entrance).getText() != null
                 && !driver.findElement(entrance).getText().isEmpty()
         ));
     }

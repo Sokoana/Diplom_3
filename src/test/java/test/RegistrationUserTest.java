@@ -40,8 +40,8 @@ public class RegistrationUserTest extends Drivers {
         basePage.clickLoginButton();
         autorizationPage.clickRegistrationLink();
         registrationPage.waitForLoadRegisterPage();
-        registrationPage.registerUser(user.getName(), user.getEmail(), "password");
-        Assert.assertTrue("Ошибки нет", driver.findElement(registrationPage.uncorrectPasswordText).isDisplayed());
+        registrationPage.registerUser(user.getName(), user.getEmail(), "q2qq");
+        Assert.assertTrue("Некорректный пароль", driver.findElement(registrationPage.uncorrectPasswordText).isDisplayed());
 
     }
     @Test

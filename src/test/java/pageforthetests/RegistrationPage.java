@@ -19,7 +19,7 @@ public class RegistrationPage {
     //кнопка Зарегистрироваться
     private final By registrationButton = By.xpath(".//button[text()='Зарегистрироваться']");
     //текста Некорректный пароль
-    public final By uncorrectPasswordText = By.className("input__error");
+    public final By uncorrectPasswordText = By.xpath(".//div/p[text()='Некорректный пароль']");
     //ссылка Войти
     private final By loginLink = By.xpath(".//div/p/a[@href='/login' and text()='Войти']");
     //страница Регистрация
